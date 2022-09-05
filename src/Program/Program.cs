@@ -18,8 +18,8 @@ namespace WordsPhrases
         public static void Main()
         {
             const string text1 = " text1 ";
-            const string text2 = " text2 ";
-            const string expected = "text1 text2";
+            const string text2 = " text2 "; //Cuando se asignan tienen espacios al principio y al final
+            const string expected = "text1 text2"; //Aca no tiene espacios al principio y final
             Phrase phrase = new Phrase();
             Word word1 = new Word(text1);
             Word word2 = new Word(text2);
