@@ -30,7 +30,7 @@ namespace WordsPhrases
         {
             get
             {
-                return this.text;
+                return this.text.Trim(); //Si bien dice que no obtiene espacios, al trimear devuelve sin espacios. Trimeo lo que retorna para sacar los espacios innecesarios
             }
 
             set

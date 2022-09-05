@@ -52,15 +52,15 @@ namespace WordsPhrases
 
             foreach (Word word in this.words)
             {
-                phrase.Append(" ");
-                phrase.Append(word.Text);
+                phrase.Append(" "); //Resulta que al ejecutar append deja un espacio al principio
+                phrase.Append(word.Text); //Como usa otro texto, me fijo en la clase word para ver si pasa algo ahí también
             }
 
             string result = phrase.ToString();
 
             // Remueve el primer espacio que se agrega siempre
 
-            return result;
+            return result.Trim(); //Trimeo todo para que no tenga espacios innecesarios
         }
     }
 }

@@ -25,7 +25,7 @@ namespace WordsPhrases
             Word word2 = new Word(text2);
             phrase.AddWord(word1);
             phrase.AddWord(word2);
-            string actual = phrase.GetPhrase();
+            string actual = phrase.GetPhrase(); //Al asignarse queda más espacio entre las palabras
             //Assert.AreEqual(expected, actual);
 
             if (actual == expected)
@@ -34,7 +34,7 @@ namespace WordsPhrases
             }
             else
             {
-                Console.WriteLine($"Algo salió mal, '{actual}' es difernte de '{expected}'");
+                Console.WriteLine($"Algo salió mal, '{actual}' es diferente de '{expected}'"); //"Diferente" estaba mal escrito
             }
         }
     }
